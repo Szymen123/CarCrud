@@ -14,6 +14,7 @@ import java.util.List;
 
 public class CarArrayAdapter extends ArrayAdapter<Car> {
 
+    public static final String CAR_INTENT_KEY = "key";
     private final Activity context;
     private final List<Car> cars;
     private final CarDatabase carDatabase;
@@ -45,7 +46,7 @@ public class CarArrayAdapter extends ArrayAdapter<Car> {
     private void startCarUpdateActivity(Car car) {
         String carId = car.getId();
         Intent intent = new Intent(context, CarUpdateActivity.class);
-        intent.putExtra("key", carId);
+        intent.putExtra(CAR_INTENT_KEY, carId);
         context.startActivity(intent);
     }
 

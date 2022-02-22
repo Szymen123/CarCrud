@@ -19,6 +19,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String CAR_CREATED_SUCCESSFULLY_TEXT = "Car Created Successfully!";
+    public static final String CAR_CREATE_FAILURE_TEXT = "Car Create Failure!";
+    public static final String FIELD_IS_REQUIRED_TEXT = "This field is required";
     Button buttonSave;
     EditText editCarName;
     CarDatabase carDatabase;
@@ -46,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (carDatabase.create(name)) {
-                showToast("Car Created Successfully!");
+                showToast(CAR_CREATED_SUCCESSFULLY_TEXT);
             } else {
-                showToast("Car Create Failure!");
+                showToast(CAR_CREATE_FAILURE_TEXT);
             }
         };
     }
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showError() {
-        editCarName.setError("This field is required");
+        editCarName.setError(FIELD_IS_REQUIRED_TEXT);
         editCarName.requestFocus();
     }
 

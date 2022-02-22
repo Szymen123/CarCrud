@@ -6,10 +6,12 @@ import com.google.firebase.database.ValueEventListener;
 
 public class CarDatabase {
 
+    public static final String CARS_REFERENCE_PATH = "cars";
+    public static final String CAR_NAME_PATH = "name";
     private final DatabaseReference databaseReference;
 
     public CarDatabase() {
-        databaseReference = FirebaseDatabase.getInstance().getReference("cars");
+        databaseReference = FirebaseDatabase.getInstance().getReference(CARS_REFERENCE_PATH);
     }
 
     void remove(Car car) {
@@ -32,6 +34,6 @@ public class CarDatabase {
     }
 
     public void update(String carId, String name) {
-        databaseReference.child(carId).child("name").setValue(name);
+        databaseReference.child(carId).child(CAR_NAME_PATH).setValue(name);
     }
 }
