@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Carcrud</string>
+    <string name="nazwa_przycisku_save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="cars_list">Cars List</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "757236343134",
+    "firebase_url": "https://carcrud1-default-rtdb.firebaseio.com",
+    "project_id": "carcrud1",
+    "storage_bucket": "carcrud1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757236343134:android:7985a56f8a9bdb8cdfafcf",
+        "android_client_info": {
+          "package_name": "com.example.carcrud1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757236343134-os3fiuujgl44kom2i8tbnhqit36afr1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6wiUu_gi5ke9Tg3TSFe8QGMrDA9t1Ncg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757236343134-os3fiuujgl44kom2i8tbnhqit36afr1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
